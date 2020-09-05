@@ -1,7 +1,14 @@
 # Gluster Storage - Zabbix
 ![Zabbix Glusterfs](https://i.imgur.com/K7OP7uM.png)
 
+---
+**NOTE**
 
+* I have changed 'gstatus_discover.py' for new gstatus 1.0.x versions.
+* But 'gluster_storage_template.xml' needs to be changed. Because 'gstatus' json scheme has changed completely.
+* If you have a question, please open a issue.
+
+---
 This project was created to monitor Gluster Storage with Zabbix.
 In this repository there are two files.
 One python script that calls [gstatus](https://github.com/gluster/gstatus), discovering gluster volumes and print data we want, according to the arguments given.
