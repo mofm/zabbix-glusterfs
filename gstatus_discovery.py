@@ -22,10 +22,17 @@ elif nargs == 2:
 elif nargs == 3:
     for volume in volume_list:
         if volume.get('name') and sys.argv[2] == volume["name"]:
-            print(volume[sys.argv[1]])
+            if sys.argv[1] == "nr_entries":
+                healinfo_list=volume["healinfo"]
+                nrents = 0
+                for heal in healinfo_list:
+                    nrents += int(heal["nr_entries"])
+                print(nrents)
+            else:
+                print(volume[sys.argv[1]])
             break
     else:
-        if sys.argv[1] == "state":
+        if sys.argv[1] == "health":
             print('down')
         else:
             print()
