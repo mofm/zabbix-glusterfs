@@ -5,7 +5,7 @@
 **NOTE**
 
 * I have changed 'gstatus_discover.py' for new gstatus 1.0.x versions.
-* But 'gluster_storage_template.xml' needs to be changed. Because 'gstatus' json scheme has changed completely.
+* 'gluster_storage_template.xml' changed for Zabbix 5.0
 * If you have a question, please open a issue.
 
 ---
